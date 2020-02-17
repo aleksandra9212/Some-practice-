@@ -1,7 +1,11 @@
 function getRecepiesWithProducts(ingredients){
     ingredients = ingredients.join(',');
     
-    fetch('http://www.recipepuppy.com/api/?i=' + ingredients)
-    .then(res => res.json())
-    .then(r => console.log(r));
+    return new Promise(function(resolve,reject){
+        fetch('http://www.recipepuppy.com/api/?i=' + ingredients)
+        .catch(err => reject(err))
+        .then(res => res.json())
+        .then(r => resolve(r));
+    })
+    
 }
