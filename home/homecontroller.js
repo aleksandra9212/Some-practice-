@@ -1,4 +1,4 @@
-function homecontroller(){
+function homeController(){
     $.get('home/home.htm').then(text => {
         const template = Handlebars.compile(text);
         const html = template(ingredients);
