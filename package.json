@@ -1,0 +1,9 @@
+{
+  "name": "",
+  "description": "\"# Some-practice-\"",
+  "dependencies": {
+    "handlebars": "^4.7.3",
+    "jquery": "^3.4.1"
+  },
+  "version": ""
+}
